@@ -1,6 +1,6 @@
-**/bin/*
-**/obj/*
+bin
+obj
 *.suo
 *.user
-**/_ReSharper*/*
+_ReSharper.*
 src/packages
