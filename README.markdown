@@ -4,7 +4,11 @@ NHibernate.MySQLBatcher is a simple library that allows NHibernate to batch MySQ
 
 ## Usage
 
-I plan on building a NuGet package for this library, but until that is finished the easiest way to use the library is to build the assembly, add it to your project, and then add the following line to your NHibernate configuration:
+The easiest way to use the library is to install it via NuGet:
+
+    Install-Package NHibernate.MySQLBatcher
+
+Then, add the following line to your NHibernate configuration:
 
     config.DataBaseIntegration(
         db => db.Batcher<MySqlClientBatchingBatcherFactory>());

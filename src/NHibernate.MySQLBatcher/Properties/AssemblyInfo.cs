@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("NHibernate.MySQLBatcher")]
 [assembly: AssemblyDescription("Enables NHibernate to batch commands when using MySQL")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Andrew Benz, Oleg Sakharov")]
+[assembly: AssemblyCompany("Andrew Benz")]
 [assembly: AssemblyProduct("NHibernate.MySQLBatcher")]
 [assembly: AssemblyCopyright("Copyright © Andrew Benz 2011")]
 [assembly: AssemblyTrademark("")]
