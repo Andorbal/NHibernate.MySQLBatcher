@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>http://www.gnu.org/licenses/lgpl-2.1-standalone.html</licenseUrl>
+    <projectUrl>https://github.com/Andorbal/NHibernate.MySQLBatcher</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright 2011 Andrew Benz</copyright>
+    <tags>ORM MySQL Batch Database</tags>
+  </metadata>
+</package>

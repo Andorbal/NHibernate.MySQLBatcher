@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("NHibernate.MySQLBatcher")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Enables NHibernate to batch commands when using MySQL")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft")]
+[assembly: AssemblyCompany("Andrew Benz, Oleg Sakharov")]
 [assembly: AssemblyProduct("NHibernate.MySQLBatcher")]
-[assembly: AssemblyCopyright("Copyright © Microsoft 2011")]
+[assembly: AssemblyCopyright("Copyright © Andrew Benz 2011")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
