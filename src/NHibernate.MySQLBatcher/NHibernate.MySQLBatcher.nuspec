@@ -11,7 +11,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <releaseNotes>Initial release.</releaseNotes>
-    <copyright>Copyright 2011 Andrew Benz</copyright>
+    <copyright>Copyright 2011 Oleg Sakharov, Andrew Benz</copyright>
     <tags>ORM MySQL Batch Database</tags>
   </metadata>
 </package>
