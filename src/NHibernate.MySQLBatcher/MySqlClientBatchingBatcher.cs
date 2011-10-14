@@ -56,7 +56,7 @@ namespace NHibernate.MySQLBatcher {
     public override void AddToBatch(IExpectation expectation) {
       totalExpectedRowsAffected += expectation.ExpectedRowCount;
       IDbCommand batchUpdate = CurrentCommand;
-      Prepare((MySqlCommand)batchUpdate);
+      Prepare(batchUpdate);
       Driver.AdjustCommand(batchUpdate);
       string lineWithParameters = null;
       var sqlStatementLogger = Factory.Settings.SqlStatementLogger;
