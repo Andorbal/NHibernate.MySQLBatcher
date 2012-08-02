@@ -60,7 +60,7 @@ namespace NHibernate.MySQLBatcher {
       Driver.AdjustCommand(batchUpdate);
       string lineWithParameters = null;
       var sqlStatementLogger = Factory.Settings.SqlStatementLogger;
-      if (sqlStatementLogger.IsDebugEnabled || log.IsDebugEnabled) {
+      if (sqlStatementLogger.IsDebugEnabled || Log.IsDebugEnabled) {
         lineWithParameters = sqlStatementLogger.GetCommandLineWithParameters(batchUpdate);
         var formatStyle = sqlStatementLogger.DetermineActualStyle(FormatStyle.Basic);
         lineWithParameters = formatStyle.Formatter.Format(lineWithParameters);
@@ -69,8 +69,8 @@ namespace NHibernate.MySQLBatcher {
           .Append(":")
           .AppendLine(lineWithParameters);
       }
-      if (log.IsDebugEnabled) {
-        log.Debug("Adding to batch:" + lineWithParameters);
+      if (Log.IsDebugEnabled) {
+        Log.Debug("Adding to batch:" + lineWithParameters);
       }
       currentBatch.Append((MySqlCommand)batchUpdate);
 
@@ -80,7 +80,7 @@ namespace NHibernate.MySQLBatcher {
     }
 
     protected override void DoExecuteBatch(IDbCommand ps) {
-      log.DebugFormat("Executing batch");
+      Log.DebugFormat("Executing batch");
       CheckReaders();
       if (Factory.Settings.SqlStatementLogger.IsDebugEnabled) {
         Factory.Settings.SqlStatementLogger.LogBatchCommand(currentBatchCommandsLog.ToString());
